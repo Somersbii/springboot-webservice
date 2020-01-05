@@ -1,5 +1,6 @@
 package io.somersby.webservice.domain.posts;
 
+import io.somersby.webservice.domain.BaseTimeEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue
@@ -28,7 +29,7 @@ public class Posts {
     private String author;
 
     @Builder
-    public Posts(String title, String content, String author) {
+    public Posts(String title, String content, String author){
         this.title = title;
         this.content = content;
         this.author = author;

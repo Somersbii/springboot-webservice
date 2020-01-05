@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.somersby.webservice.domain.posts.PostsRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-05T08:01:22" hostname="DESKTOP-PF5V00C" time="2.279">
+  <properties/>
+  <testcase name="BaseTimeEntity_등록" classname="io.somersby.webservice.domain.posts.PostsRepositoryTest" time="2.279"/>
+  <system-out><![CDATA[17:01:08.778 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.somersby.webservice.domain.posts.PostsRepositoryTest]
+17:01:08.779 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.somersby.webservice.domain.posts.PostsRepositoryTest]
+17:01:08.780 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.somersby.webservice.domain.posts.PostsRepositoryTest]
+17:01:08.781 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.somersby.webservice.domain.posts.PostsRepositoryTest]
+17:01:08.792 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1686d139 testClass = PostsRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@441eb524 testClass = PostsRepositoryTest, locations = '{}', classes = '{class io.somersby.webservice.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@780186d2, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1d31e715, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@628ac7d4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3965f9d2], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+17:01:08.798 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.somersby.webservice.domain.posts.PostsRepositoryTest]
+17:01:08.799 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.somersby.webservice.domain.posts.PostsRepositoryTest]
+17:01:08.855 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2020-01-05 17:01:09.865  INFO 14548 --- [    Test worker] i.s.w.domain.posts.PostsRepositoryTest   : Starting PostsRepositoryTest on DESKTOP-PF5V00C with PID 14548 (started by lyg in C:\ideaProjects\webservice)
+2020-01-05 17:01:09.868  INFO 14548 --- [    Test worker] i.s.w.domain.posts.PostsRepositoryTest   : No active profile set, falling back to default profiles: default
+2020-01-05 17:01:12.374  INFO 14548 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-05 17:01:12.552  INFO 14548 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156ms. Found 1 JPA repository interfaces.
+2020-01-05 17:01:13.590  INFO 14548 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-05 17:01:14.231  INFO 14548 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-05 17:01:14.725  INFO 14548 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-05 17:01:14.970  INFO 14548 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-05 17:01:15.295  INFO 14548 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.11.Final}
+2020-01-05 17:01:15.302  INFO 14548 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-05 17:01:15.483  INFO 14548 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-01-05 17:01:15.846  INFO 14548 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-05 17:01:17.234  INFO 14548 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4a61601d'
+2020-01-05 17:01:17.241  INFO 14548 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-05 17:01:18.772  WARN 14548 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-05 17:01:19.972  INFO 14548 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-05 17:01:21.676  INFO 14548 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-01-05 17:01:21.925  INFO 14548 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-05 17:01:22.200  INFO 14548 --- [    Test worker] i.s.w.domain.posts.PostsRepositoryTest   : Started PostsRepositoryTest in 13.319 seconds (JVM running for 17.181)
+2020-01-05 17:01:24.272  INFO 14548 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
