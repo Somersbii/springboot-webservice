@@ -5,7 +5,7 @@ plugins {
 }
 
 //Spring Boot Overriding
-ext['hibernate.version'] = '5.2.11.Final' //추가
+ext['hibernate.version'] = '5.2.11.Final'
 
 group = 'io.somersby'
 version = '0.0.1-SNAPSHOT'
